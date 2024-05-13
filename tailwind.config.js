@@ -1,9 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: 'class',
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
@@ -12,7 +13,19 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        'nunito_sans': ['var(--font-nunito_sans)'],
+        'poppins': 'var(--font-poppins)',
+      },
+      colors: {
+        'sky': '#dbeafe',
+        'customlight':'#1b1c1e',
+        'darkblue': '#272e5c',
+        'darksky':'#0091FF',
+        'darkcyan':'#9CFEFF'
+      },
     },
   },
+
   plugins: [],
 };
